@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spotify</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e55df08514.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -16,18 +17,22 @@
         <!-- contenitore menu/sidebar -->
         <div class="sidebar-container f-l">
           <div class="box-menu">
-            <img class="xs-hidden sm-visible" src="img/logo.svg" alt="">
-            <img class="sm-hidden xs-visible" src="img/logo-small.svg" alt="">
+            <img class="logo xs-hidden sm-visible" src="img/logo.svg" alt="">
+            <img class="logo sm-hidden xs-visible" src="img/logo-small.svg" alt="">
             <ul class="menu">
               <li><img src="img/home.svg" alt=""><p class="xs-hidden sm-visible">Home</p> </li>
               <li><img src="img/search.svg" alt=""><p class="xs-hidden sm-visible">Cerca</p> </li>
               <li><img src="img/libreria.svg" alt=""><p class="xs-hidden sm-visible">La tua libreria</p> </li>
             </ul>
           </div>
-          <div class="box-playlist xs-hidden sm-visible">
+          <div class="playlist-title xs-hidden sm-visible">
             <ul>
               <li>Playlist</li>
-              <li>Crea Playlist</li>
+              <li><i class="fas fa-plus-square"></i>Crea Playlist</li>
+            </ul>
+          </div>
+          <div class="box-playlist xs-hidden sm-visible">
+            <ul>
               <li>Nome Playlist</li>
               <li>Nome Playlist</li>
               <li>Nome Playlist</li>
@@ -38,12 +43,12 @@
             </ul>
           </div>
           <div class="box-bottom">
-            <div>
+            <div class="app-install">
               <img src="img/download.svg" alt="">
               <p class="xs-hidden sm-visible">Installa app</p>
             </div>
-            <div>
-              <div class="profile">
+            <div class="profile">
+              <div class="profile-img">
                 <img src="img/profile.svg" alt="">
               </div>
               <p class="xs-hidden sm-visible">John Doe</p>

@@ -6,7 +6,7 @@
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -56,8 +56,13 @@ ul {
   height: 100%;
   width: 40px;
   background: #000;
-  color: #fff;
+  color: rgb(102, 102, 102, 0.7);
   padding: 0 5px;
+}
+
+ .sidebar-container li:hover {
+  color: #fff;
+  cursor: pointer;
 }
 
 .box-menu {
@@ -66,46 +71,92 @@ ul {
   text-align: center;
 }
 
-.box-menu > img{
+.logo{
   margin: 5px 0 0px;
   height: 25px;
 }
 
-.menu li {
-  display: flex;
-  align-items: center;
-  margin: 7px 0;
+.menu li:nth-child(1) {
+  color: #fff;
+  font-weight: bold;
 }
 
 .menu li p {
   padding: 0px 8px;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .menu li img {
+  margin: 5px 0;
   height: 22px;
-  margin: auto;
+  vertical-align: middle;
 }
 
-
-.box-bottom {
-  align-self: flex-end;
-  width: 100%;
+.playlist-title li:first-child {
+  padding: 10px 0;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
 }
 
-.box-bottom div {
-   display: flex;
+.playlist-title li:nth-child(2) i {
+  font-size: 35px;
+  vertical-align: middle;
+  padding-right: 5px;
 }
 
-.box-bottom img {
-  height: 15px;
+.playlist-title li:nth-child(2){
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .box-playlist {
   height: 100%;
+  padding: 10px 0;
   min-height: 100px;
-  background:green;
   overflow: auto;
+}
+
+.box-playlist li {
+  padding: 5px 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.box-bottom > div {
+   padding: 10px 0;
+}
+
+.app-install img {
+  margin-left: 6px;
+  height: 15px;
+}
+
+.app-install p {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.app-install p:hover{
+  cursor: pointer;
+  color: #fff;
+}
+
+.profile-img {
+  background: #808080;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.profile p {
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
 }
 
 /* fine stili contenitore menu */
@@ -115,7 +166,7 @@ ul {
 .main-container {
   height: 100%;
   width: calc(100% - 40px);
-  background: #944dff;
+  background: #141922;
 }
 
 /* fine stili contenitore contenuti principali */
@@ -125,7 +176,7 @@ ul {
 .control-bar-container {
   height: 70px;
   width: 100%;
-  background: #404040;
+  background: #282828;
 }
 
 /* fine stili sezione barra di controllo */
@@ -159,9 +210,9 @@ ul {
     height: auto;
   }
 
-  .box-menu > img{
-    padding-top: 10px;
-    height: 45px;
+  .logo{
+    margin: 20px 0 20px;
+    height: 40px;
   }
 
   .menu li {
@@ -172,6 +223,25 @@ ul {
     height: 22px;
     margin: inherit;
   }
+
+  .app-install {
+    border-bottom: 1px solid #404040;
+  }
+
+  .app-install img {
+    margin-left: 0px;
+    margin-right: 7px;
+    vertical-align: middle;
+  }
+
+  .profile-img {
+    display: inline-block;
+    margin-right: 7px;
+    vertical-align: middle;
+  }
+
+
+  /* finestili contenitore menu */
 
 
 
