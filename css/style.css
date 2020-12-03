@@ -13,6 +13,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .clearfix::after {
   content: '';
   display: table;
@@ -30,6 +35,34 @@ ul {
 .xs-hidden {
   display: none;
 }
+
+.rounded {
+  border-radius: 50%;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay i {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  font-size: 60px;
+  display: none;
+}
+
+.overlay:hover i {
+  display: block;
+}
+
+.overlay:hover img {
+  filter:brightness(50%);
+}
+
+
 
 /* fine common style / utility */
 
@@ -169,13 +202,20 @@ ul {
 .main-container {
   height: 100%;
   width: calc(100% - 40px);
-  overflow: auto;
+  background: #141922;
+  overflow-y: auto;
+}
+
+
+.main-container::-webkit-scrollbar {
+  display: none;
 }
 
 .box-upgrade {
   height: 90px;
   width: calc(100% - 40px);
   position: fixed;
+  right: 0;
   padding: 20px 0;
   background: rgba(0, 0, 0, 0.5);
   text-align: right;
@@ -196,11 +236,93 @@ ul {
   font-size: 15px;
 }
 
-.container-album {
-  height: 100%;
-  margin-top: 90px;
-  background: #141922;
+.top-bar {
+  text-align: center;
+  padding: 20px 0;
 }
+
+.top-bar ul li{
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #808080;
+  font-weight: bold;
+  padding: 0 10px;
+  height: 30px;
+}
+
+.top-bar ul li:hover {
+  color: #fff;
+}
+
+.top-bar ul li a:after {
+  content: '';
+  display: none;
+  border: 1px solid greenyellow;
+  width: 25px;
+  margin: 0 auto;
+  margin-top: 4px;
+}
+
+.top-bar ul li:hover a:after {
+  display: block;
+}
+
+/* stili sezione album */
+
+.container-album {
+  margin-top: 90px;
+}
+
+.row-album {
+  padding: 15px;
+}
+
+.row-album h2{
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.row-album p {
+  color: #808080;
+  font-size: 10px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.album {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.album-cover {
+  max-width: calc(100% / 2);
+  padding: 5px;
+  text-align: center;
+}
+
+.album-cover img {
+  width: 100%;
+}
+
+.album-cover h3 {
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 7px 0;
+
+}
+
+.album-cover p {
+  color: #808080;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+
+/* fine stili sezione album */
 
 
 /* fine stili contenitore contenuti principali */
@@ -289,10 +411,7 @@ ul {
   }
 
 
-    /* finbe stili contenutore main */
-
-
-
+  /* finbe stili contenutore main */
 
 
 }
@@ -302,6 +421,14 @@ ul {
 /* MEDIA QUERY MD */
 
 @media screen and (min-width:768px) {
+
+
+  .album-cover {
+    max-width: calc(100% / 7);
+    min-width: 170px;
+  }
+
+
 
 
 
@@ -320,17 +447,6 @@ ul {
 
 
 
-
-
-
 }
 
 /* FINE MEDIA QUERY LG */
-
-/*media specifica per contenitore upgrade sotto i 70px height */
-
-@media screen and (max-height:70px){
-  .box-upgrade {
-    width: 100%;
-  }
-}
