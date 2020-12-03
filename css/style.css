@@ -39,6 +39,10 @@ a {
 .rounded {
   border-radius: 50%;
 }
+.hover:hover {
+  color: #fff;
+  cursor: pointer;
+}
 
 .overlay {
   position: relative;
@@ -61,8 +65,6 @@ a {
 .overlay:hover img {
   filter:brightness(50%);
 }
-
-
 
 /* fine common style / utility */
 
@@ -173,11 +175,6 @@ a {
 .app-install p {
   font-size: 12px;
   font-weight: bold;
-}
-
-.app-install p:hover{
-  cursor: pointer;
-  color: #fff;
 }
 
 .profile-img {
@@ -321,21 +318,112 @@ a {
   font-weight: bold;
 }
 
-
 /* fine stili sezione album */
-
 
 /* fine stili contenitore contenuti principali */
 
-/* stili sezione barra di controllo */
+/* stili footer-sezione barra di controllo */
 
 .control-bar-container {
   height: 70px;
   width: 100%;
   background: #282828;
+  display: flex;
 }
 
-/* fine stili sezione barra di controllo */
+
+.footer-box-l {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.footer-box-l img {
+  height: 40px;
+  margin: 0 10px;
+}
+
+.footer-box-l h3 {
+  font-size: 11px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.footer-box-l p {
+  font-size: 9px;
+  color: #808080;
+  font-weight: bold;
+  padding-right: 30px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-box-l i {
+  color: #808080;
+  font-size: 13px;
+  padding: 2px 5px;
+}
+
+.footer-box-c{
+  flex: 2;
+  background: red;
+}
+.footer-box-r{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-box-r i {
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 5px;
+}
+
+.progress-bar {
+  width: 70px;
+  height: 3px;
+  background: #808080;
+  border-radius: 20px;
+  margin: 0 5px;
+}
+
+.fill {
+  position: relative;
+  height: 100%;
+  width: 30px;
+  background: #fff;
+  border-radius: 20px;
+
+}
+
+.fill::after {
+  content: '';
+  position: absolute;
+  top: -3px;
+  right: 0;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #808080;
+  display: none;
+}
+
+.progress-bar:hover .fill {
+  background: greenyellow;
+  cursor: pointer;
+}
+
+.progress-bar:hover .fill::after {
+  display: block;
+}
+
+
+/* fine stili footer-sezione barra di controllo */
 
 /* fine stili body */
 
@@ -410,8 +498,13 @@ a {
     width: calc(100% - 190px);
   }
 
-
   /* finbe stili contenutore main */
+
+  /* stili footer */
+
+  .icon {
+    flex-direction: row;
+  }
 
 
 }
