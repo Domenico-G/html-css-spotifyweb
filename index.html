@@ -13,9 +13,9 @@
   <body>
     <div class="wrapper-container-page">
       <!-- sezione contenitore menu + contenuto principale  -->
-      <div class="body-container clearfix">
+      <main class="body-container clearfix">
         <!-- contenitore menu/sidebar -->
-        <div class="sidebar-container f-l">
+        <nav class="sidebar-container f-l">
           <div class="box-menu">
             <img class="logo xs-hidden sm-visible" src="img/logo.svg" alt="">
             <img class="logo sm-hidden xs-visible" src="img/logo-small.svg" alt="">
@@ -54,19 +54,46 @@
               <p class="xs-hidden sm-visible">John Doe</p>
             </div>
           </div>
-        </div>
+        </nav>
         <!-- fine contenitore menu/sidebar -->
         <!-- contenutore contenuti principali -->
         <div class="main-container f-l">
+          <!-- contenitore effettua l'upgrade -->
+          <div class="box-upgrade">
+            <button type="button" name="button">Effettua l'upgrade</button>
+          </div>
+          <!-- fine contenitore effettua l'upgrade -->
+          <!-- inizio contenitore album e brani -->
+          <div class="container-album">
+            <div class="top-bar">
+              <li>In evidenza</li>
+              <li>Podcast</li>
+              <li>Classifiche</li>
+              <li>Gneri e mood</li>
+              <li>Nuove uscite</li>
+              <li>Scopri</li>
+            </div>
+            <div class="box-album">
+              <div class="row-album">
+                <h2>Recently played</h2>
+                <div class="album">
 
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+          <!-- fine inizio contenitore album e brani -->
         </div>
         <!-- fine contenutore contenuti principali -->
-      </div>
+      </main>
       <!-- fine sezione contenitore menu + contenuto principale  -->
       <!-- sezione conteintore barra di controllo -->
-      <div class="control-bar-container">
+      <footer class="control-bar-container">
 
-      </div>
+      </footer>
       <!-- sezione conteintore barra di controllo -->
 
     </div>

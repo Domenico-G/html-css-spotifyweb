@@ -79,6 +79,9 @@ ul {
 .menu li:nth-child(1) {
   color: #fff;
   font-weight: bold;
+  /* margin-left: -15px;
+  padding-left: 27px;
+  border-left: 3px solid greenyellow; */
 }
 
 .menu li p {
@@ -166,8 +169,39 @@ ul {
 .main-container {
   height: 100%;
   width: calc(100% - 40px);
+  overflow: auto;
+}
+
+.box-upgrade {
+  height: 90px;
+  width: calc(100% - 40px);
+  position: fixed;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: right;
+}
+
+.box-upgrade button {
+  background: rgba(0, 0, 0, 0.0);
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 30px;
+}
+
+.box-upgrade button:hover {
+  font-size: 15px;
+}
+
+.container-album {
+  height: 100%;
+  margin-top: 90px;
   background: #141922;
 }
+
 
 /* fine stili contenitore contenuti principali */
 
@@ -219,6 +253,12 @@ ul {
     margin: 3px 0;
   }
 
+  .menu li:nth-child(1) {
+    margin-left: -15px;
+    padding-left: 27px;
+    border-left: 3px solid greenyellow;
+  }
+
   .menu li img {
     height: 22px;
     margin: inherit;
@@ -240,8 +280,16 @@ ul {
     vertical-align: middle;
   }
 
+  /* fine stili contenitore menu */
 
-  /* finestili contenitore menu */
+  /* stili contenutore main */
+
+  .box-upgrade {
+    width: calc(100% - 190px);
+  }
+
+
+    /* finbe stili contenutore main */
 
 
 
@@ -278,3 +326,11 @@ ul {
 }
 
 /* FINE MEDIA QUERY LG */
+
+/*media specifica per contenitore upgrade sotto i 70px height */
+
+@media screen and (max-height:70px){
+  .box-upgrade {
+    width: 100%;
+  }
+}
