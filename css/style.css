@@ -145,16 +145,13 @@ a {
 }
 
 .logo{
-  margin: 5px 0 0px;
+  margin: 5px 0 0;
   height: 25px;
 }
 
 .menu li:nth-child(1) {
   color: #fff;
   font-weight: bold;
-  /* margin-left: -15px;
-  padding-left: 27px;
-  border-left: 3px solid greenyellow; */
 }
 
 .menu li p {
@@ -423,12 +420,12 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 11px;
   padding: 10px 0;
 }
 
 .box-c-top i {
-  padding: 0 2%;
+  padding: 0 1vw;
 }
 
 .box-c-top i:nth-child(3) {
