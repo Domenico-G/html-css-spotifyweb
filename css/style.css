@@ -578,7 +578,10 @@ a {
 
 /* MEDIA QUERY LG */
 
-@media screen and (min-width:992px) {
+@media screen and (max-height:129px) {
+  .section-upgrade {
+   display: none;
+  }
 
 }
 
