@@ -239,7 +239,12 @@ a {
 }
 
 .main-container::-webkit-scrollbar {
-  display: none;
+  width: 10px;;
+}
+
+.main-container::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 10px;
 }
 
 /* stili contenitore pulsante unpgrade */
