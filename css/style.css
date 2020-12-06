@@ -64,6 +64,7 @@ a {
 
 .album-cover:hover img {
   filter:brightness(50%);
+  cursor: pointer;
 }
 
 .progress-bar {
@@ -80,7 +81,6 @@ a {
   width: 40%;
   background: #fff;
   border-radius: 20px;
-
 }
 
 .fill::after {
@@ -102,6 +102,10 @@ a {
 
 .progress-bar:hover .fill::after {
   display: block;
+}
+
+.white {
+  color: #fff;
 }
 
 /* fine common style / utility */
@@ -131,6 +135,8 @@ a {
   background: #000;
   color: rgb(102, 102, 102, 0.7);
   padding: 0 5px;
+  font-weight: bold;
+  font-size: 12px;
 }
 
  .sidebar-container li:hover {
@@ -140,7 +146,6 @@ a {
 
 .box-menu {
   height: 100%;
-  width: 100%;
   text-align: center;
 }
 
@@ -149,15 +154,8 @@ a {
   height: 25px;
 }
 
-.menu li:nth-child(1) {
-  color: #fff;
-  font-weight: bold;
-}
-
 .menu li p {
   padding: 0px 8px;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 .menu li img {
@@ -168,9 +166,6 @@ a {
 
 .playlist-title li:first-child {
   padding: 10px 0;
-  font-size: 12px;
-  text-transform: uppercase;
-  font-weight: bold;
   color: #fff;
 }
 
@@ -181,21 +176,25 @@ a {
 }
 
 .playlist-title li:nth-child(2){
-  font-size: 12px;
-  font-weight: bold;
 }
 
 .box-playlist {
   height: 100%;
   padding: 10px 0;
-  min-height: 100px;
   overflow: auto;
+}
+
+.box-playlist::-webkit-scrollbar {
+  width: 5px;
+}
+
+.box-playlist::-webkit-scrollbar-thumb {
+  background-color: #808080;
+  border-radius: 10px;
 }
 
 .box-playlist li {
   padding: 5px 0;
-  font-size: 12px;
-  font-weight: bold;
 }
 
 .box-bottom > div {
@@ -207,24 +206,13 @@ a {
   height: 15px;
 }
 
-.app-install p {
-  font-size: 12px;
-  font-weight: bold;
-}
-
 .profile-img {
   background: #808080;
   border-radius: 50%;
-  height: 20px;
-  width: 20px;
+  height: 22px;
+  width: 22px;
   overflow: hidden;
   margin: 0 auto;
-}
-
-.profile p {
-  font-size: 12px;
-  font-weight: bold;
-  color: #fff;
 }
 
 /* fine stili contenitore menu */
@@ -239,7 +227,7 @@ a {
 }
 
 .main-container::-webkit-scrollbar {
-  width: 10px;;
+  width: 10px;
 }
 
 .main-container::-webkit-scrollbar-thumb {
@@ -265,7 +253,6 @@ a {
   border-radius: 20px;
   font-size: 11px;
   font-weight: bold;
-  text-transform: uppercase;
   padding: 10px 30px;
   margin: 10px 10px 15px;
 }
@@ -317,6 +304,7 @@ a {
 
 .section-album {
   padding: 0 15px;
+  font-weight: bold;
 }
 
 .row-album {
@@ -331,7 +319,6 @@ a {
 
 .title-row h2{
   font-size: 20px;
-  font-weight: bold;
   color: #fff;
   width: 100%
 }
@@ -339,7 +326,6 @@ a {
 .title-row p {
   color: #808080;
   font-size: 10px;
-  font-weight: bold;
   padding: 5px 0;
 }
 
@@ -356,15 +342,12 @@ a {
 .col-album h3 {
   color: #fff;
   font-size: 15px;
-  font-weight: bold;
   padding: 7px 0;
-
 }
 
 .col-album p {
   color: #808080;
   font-size: 10px;
-  font-weight: bold;
 }
 
 /* fine stili sezione album */
@@ -378,6 +361,7 @@ a {
   width: 100%;
   background: #282828;
   display: flex;
+  font-weight: bold;
 }
 
 
@@ -395,13 +379,11 @@ a {
 .footer-box-l h3 {
   font-size: 11px;
   color: #fff;
-  font-weight: bold;
 }
 
 .footer-box-l p {
-  font-size: 9px;
+  font-size: 7px;
   color: #808080;
-  font-weight: bold;
   padding-right: 30px;
 }
 
@@ -433,11 +415,11 @@ a {
   padding: 0 1vw;
 }
 
-.box-c-top i:nth-child(3) {
+.icon-play {
   font-size: 25px;
 }
 
-.box-c-top i:nth-child(3):hover {
+.icon-play:hover {
   transform: scale(1.3);
   cursor: pointer;
 }
@@ -451,7 +433,6 @@ a {
 
 .box-c-bottom span {
   font-size: 10px;
-  font-weight: bold;
 }
 
 .footer-box-r{
